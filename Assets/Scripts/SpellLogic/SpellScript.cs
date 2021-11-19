@@ -13,17 +13,19 @@ public class SpellScript : MonoBehaviour
 
     public Transform MyTarget { get; private set; }
 
+    private Character source;
+
     // Start is called before the first frame update
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
     }
 
-    public void Initialize(Transform target, int damage)
+    public void Initialize(Transform target, int damage, Character source)
     {
         this.MyTarget = target;
         this.damage = damage;
-        
+        this.source = source;
     }
 
     private void FixedUpdate()
@@ -47,7 +49,9 @@ public class SpellScript : MonoBehaviour
         {
             speed = 0;
 
-            collision.GetComponentInParent<Enemy>().TakeDamage(damage);
+            Character c = collision.GetComponentInParent<Character>();
+
+            c.TakeDamage(damage, source);
 
             GetComponent<Animator>().SetTrigger("Impact");
             myRigidBody.velocity = Vector2.zero;

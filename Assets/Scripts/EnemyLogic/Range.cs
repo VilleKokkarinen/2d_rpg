@@ -16,7 +16,7 @@ public class Range : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            parent.Target = collision.transform;
+            parent.SetTarget(collision.GetComponent<Character>());
         }
     }
 
@@ -25,6 +25,7 @@ public class Range : MonoBehaviour
         if (collision.tag == "Player")
         {
             parent.Target = null;
+            //parent.Path = null;
         }
     }
 }

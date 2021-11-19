@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5eb2fe89ac31ba4ab3a91ea77c66450, type: 3}
+  m_Name: Old Staff
+  m_EditorClassIdentifier: 
+  icon: {fileID: -906633605, guid: 807d5271bf96e58468a61d1026092633, type: 3}
+  stackSize: 0
+  title: Old Staff
+  quality: 0
+  price: 0
+  armortype: 10
+  itemstats:
+  - Name: intellect
+    Value: 5
+  animationClips:
+  - {fileID: 7400000, guid: 80ad4ca817d070a40a7c97cad1049094, type: 2}
+  - {fileID: 7400000, guid: 72f3dfd84e0afdc42a0716662683a531, type: 2}
+  - {fileID: 7400000, guid: 311587c87e031634395da9d6f55bb5a7, type: 2}
+  - {fileID: 7400000, guid: d963931caf26bcf41a4172f69e0b8683, type: 2}
+  - {fileID: 7400000, guid: 76cda7a6ec493334ea13def1db61fbfa, type: 2}
+  - {fileID: 7400000, guid: fea0347445446694496a0b25a2f3ef95, type: 2}
+  - {fileID: 7400000, guid: 6209e13993c4b884a84dc44b9aca763a, type: 2}
+  - {fileID: 7400000, guid: 39b699d73d1d3174383bcbd96ca009b8, type: 2}
+  - {fileID: 7400000, guid: ebc0a6628ded905418151f2122737df1, type: 2}
+  - {fileID: 7400000, guid: 4c306f2a7655bd4409c8ab352be06491, type: 2}
+  - {fileID: 7400000, guid: 28b71e74b56ddee46bb480d942ac333a, type: 2}
+  - {fileID: 7400000, guid: f3ef47fa58a63a248aec58f705691ac9, type: 2}

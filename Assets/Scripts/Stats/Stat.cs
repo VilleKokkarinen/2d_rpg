@@ -6,20 +6,25 @@ using UnityEngine.UI;
 public class Stat : MonoBehaviour
 {
 
-    private Image content;
+    protected Image content;
 
     [SerializeField]
     private float lerpSpeed;
-    
-    
+
+    private float overflow;
+
+
     public float MaxValue { get; set; }
 
     public float StatCurrentValue { 
         get => CurrentValue;
 
         set {
-            if(value > MaxValue)
+            if (value > MaxValue)
+            {
+                overflow = value - MaxValue;
                 CurrentValue = MaxValue;
+            }
             else if (value < 0)
                 CurrentValue = 0;
             else
@@ -30,11 +35,19 @@ public class Stat : MonoBehaviour
         }
     }
 
+    public float Overflow { get
+        {
+            float tmp = overflow;
+            overflow = 0;
+            return tmp;
+        }
+     }
+
     private float CurrentValue;
 
     private float currentFill;
 
-    public void Initialize(float currentValue, float maxValue)
+    public virtual void Initialize(float currentValue, float maxValue)
     {
         if(content == null)
         {
@@ -59,11 +72,11 @@ public class Stat : MonoBehaviour
         HandleBar();
     }
 
-    public void HandleBar()
+    public virtual void HandleBar()
     {
         if (currentFill != content.fillAmount)
         {
-            content.fillAmount = Mathf.Lerp(content.fillAmount, currentFill, Time.deltaTime * lerpSpeed);
+            content.fillAmount = Mathf.MoveTowards(content.fillAmount, currentFill, Time.deltaTime * lerpSpeed);
         }
     }
 }

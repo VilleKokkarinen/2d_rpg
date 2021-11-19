@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5eb2fe89ac31ba4ab3a91ea77c66450, type: 3}
+  m_Name: Boots
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 30a3672234af08844a82c3add0c596be, type: 3}
+  stackSize: 0
+  title: Boots
+  quality: 0
+  armortype: 6
+  itemstats: []
+  animationClips:
+  - {fileID: 7400000, guid: 4887dd9bc440abb4e9c8a0823ab6478e, type: 2}
+  - {fileID: 7400000, guid: d2b3a52b5d2b384489e0f2671ea5d2e5, type: 2}
+  - {fileID: 7400000, guid: 1513d18a06acda3438c70cb96bb050b4, type: 2}
+  - {fileID: 7400000, guid: 6bc92f5700ea77a4c9574493acdeac96, type: 2}
+  - {fileID: 7400000, guid: 8a4b29eb374663146a55ebb9b74a0cf5, type: 2}
+  - {fileID: 7400000, guid: a1ebaa8669b8a0e4e833533089567054, type: 2}
+  - {fileID: 7400000, guid: c1307859596a4ed4485f89fa1d263d59, type: 2}
+  - {fileID: 7400000, guid: f486e6947c7a7f449bba815f8ead78bd, type: 2}
+  - {fileID: 7400000, guid: 7560f9cecd832b44d8780d19159fa275, type: 2}
+  - {fileID: 7400000, guid: 4dc47659f7146cf4a907d4ff2e096d65, type: 2}
+  - {fileID: 7400000, guid: 49c543a084ba949408c29f8cb19ed43f, type: 2}
+  - {fileID: 7400000, guid: d87598151ac535d40a685525710d80b6, type: 2}

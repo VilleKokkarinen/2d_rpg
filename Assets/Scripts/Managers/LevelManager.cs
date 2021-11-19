@@ -106,7 +106,6 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        Debug.Log(composition);
         return composition;
     }
 

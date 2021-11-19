@@ -2,48 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void HealthChanged(float health);
-
-public delegate void CharacterRemoved();
-
-public class NPC : Character
-{ 
-    public event HealthChanged healthChanged;
-
-    public event CharacterRemoved characterRemoved;
+public class NPC : MonoBehaviour, IInteractable
+{
+    public bool IsInteracting { get; set; }
 
     [SerializeField]
-    private Sprite portrait;
+    private Window window;
 
-    public Sprite Portrait { get => portrait;  }
-
-    public virtual void DeSelect()
+    public virtual void Interact()
     {
-        healthChanged -= new HealthChanged(UIManager.Instance.UpdateTargetFrame);
-        characterRemoved -= new CharacterRemoved(UIManager.Instance.HideTargetFrame);
-    }
-
-    public virtual Transform Select()
-    {
-        return hitBox;
-    }
-
-
-    public void OnHealthChanged(float health)
-    {
-        if(healthChanged != null)
+        if(!IsInteracting)
         {
-            healthChanged(health);
+            IsInteracting = true;
+            window.Open(this);
         }
     }
 
-
-    public void OnCharacterRemoved()
+    public virtual void StopInteract()
     {
-        if(characterRemoved != null)
+        if (IsInteracting)
         {
-            characterRemoved();
+            IsInteracting = false;
+            window.Close();
         }
-        Destroy(gameObject);
     }
 }

@@ -11,6 +11,7 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
 
     private Color fadedColor;
 
+
     public int CompareTo(Obstacle other)
     {
         if (spriteRenderer.sortingOrder > other.spriteRenderer.sortingOrder)
@@ -48,5 +49,21 @@ public class Obstacle : MonoBehaviour, IComparable<Obstacle>
     public void FadeIn()
     {
         spriteRenderer.color = defaultColor;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.name == "ObstacleCollider")
+        {
+            FadeOut();
+        }  
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name == "ObstacleCollider")
+        {
+            FadeIn();
+        }
     }
 }

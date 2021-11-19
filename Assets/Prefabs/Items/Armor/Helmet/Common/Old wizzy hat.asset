@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5eb2fe89ac31ba4ab3a91ea77c66450, type: 3}
+  m_Name: Old wizzy hat
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: f0130e7267a04cb47878dbf3848fbf0d, type: 3}
+  stackSize: 0
+  title: Old wizzy hat
+  quality: 0
+  armortype: 0
+  itemstats:
+  - Name: intellect
+    Value: 2
+  - Name: strength
+    Value: 0
+  - Name: armor
+    Value: 1
+  - Name: stamina
+    Value: 0
+  - Name: weight
+    Value: 1
+  animationClips:
+  - {fileID: 7400000, guid: 986695981ea9e3247b8fa488c6bccfdb, type: 2}
+  - {fileID: 7400000, guid: 01d0c090f4591744aafc0ccb4f5f24d0, type: 2}
+  - {fileID: 7400000, guid: 354c859f9fde05f4aabdce552ed0ce94, type: 2}
+  - {fileID: 7400000, guid: 5ff0a13ba01469c49bbae197782f1763, type: 2}
+  - {fileID: 7400000, guid: 1ed6141bb6342414dbed694babbba414, type: 2}
+  - {fileID: 7400000, guid: 4709a0e9f1d425743a2070633d604840, type: 2}
+  - {fileID: 7400000, guid: ad8ccb052537f584c8888b907fdf888d, type: 2}
+  - {fileID: 7400000, guid: 7aaf9778c38941c4081293d55feda370, type: 2}
+  - {fileID: 7400000, guid: 23e9f4cefef748846bf30349ae227622, type: 2}
+  - {fileID: 7400000, guid: fba2967eed86b194b82aac4a429d2771, type: 2}
+  - {fileID: 7400000, guid: 1a75e6a406ea58142affb58ab6974b82, type: 2}
+  - {fileID: 7400000, guid: 8ef27e61f838628438cf36c9ca99afab, type: 2}

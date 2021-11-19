@@ -15,6 +15,7 @@ public class WaterTile : Tile
 
     public override bool StartUp(Vector3Int position, ITilemap tilemap, GameObject go)
     {
+        GameManager.Instance.Blocked.Add(position);
         return base.StartUp(position, tilemap, go);
     }
 
@@ -38,7 +39,7 @@ public class WaterTile : Tile
 
     public override void GetTileData(Vector3Int location, ITilemap tilemap, ref TileData tileData)
     {
-        //base.GetTileData(location, tilemap, ref tileData);
+        base.GetTileData(location, tilemap, ref tileData);
 
         tileData.sprite = preview;
 

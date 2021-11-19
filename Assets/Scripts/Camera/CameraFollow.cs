@@ -54,12 +54,5 @@ public class CameraFollow : MonoBehaviour
         yMin = minTile.y + height / 2;
 
         yMax = maxTile.y - height / 2;
-
-        Debug.Log("h:" + height);
-        Debug.Log("w:" + width);
-        Debug.Log("xMin:" + xMin);
-        Debug.Log("xMax:" + xMax);
-        Debug.Log("yMin:" + yMin);
-        Debug.Log("yMax:" + yMax);
     }
 }
